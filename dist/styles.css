@@ -1,6 +1,11 @@
 .header {
-    color: yellow;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.bigtest {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }

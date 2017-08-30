@@ -1,9 +1,11 @@
+/*eslint-disable no-unused-vars*/
 import './assets/stylesheets/index.scss';
 import './assets/stylesheets/index.css';
-
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './app/app.jsx';
+
+/*eslint-enable no-unused-vars*/
 
 ReactDOM.render(<App />, document.getElementById('root'));
 

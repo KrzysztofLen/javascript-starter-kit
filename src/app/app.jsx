@@ -5,17 +5,18 @@ import slider03 from 'images/slider03.jpg';
 
 const hello = () => {
     return (
-        <div class="container">
+        <div className="container">
+            <h1 className="bigtest">Bigger Test</h1>
             <h2 className="header">Image Container</h2>
-            <div class="image-wrapper">
+            <div className="image-wrapper">
                 <img src={slider01} className="image-wrapper__image" alt=""/>
             </div>
 
-            <div class="image-wrapper">
+            <div className="image-wrapper">
                 <img src={slider02} className="image-wrapper__image" alt=""/>
             </div>
 
-            <div class="image-wrapper">
+            <div className="image-wrapper">
                 <img src={slider03} className="image-wrapper__image" alt=""/>
             </div>
 

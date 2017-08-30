@@ -6,12 +6,12 @@ $font-size: 5rem;
 $merriweater: "Merriweather", sans-serif;
 
 body {
-  height: 100vh;
   background-color: $brand-purple;
   color: $brand-green;
+  font-family: $merriweater;
   font-size: $font-size;
   font-weight: 900;
-  font-family: $merriweater;
+  height: 100vh;
 }
 
 .test {
