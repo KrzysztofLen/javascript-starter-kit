@@ -9,3 +9,21 @@
   display: -ms-flexbox;
   display: flex;
 }
+
+.anothertest {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.test {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.other {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}

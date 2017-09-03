@@ -12,6 +12,7 @@ let config = {
         path: path.resolve(__dirname, 'dist'),
         filename: '[name].bundle.js'
     },
+    watch: true,
     resolve: { // These options change how modules are resolved
         extensions: ['.js', '.jsx', '.json', '.scss', '.css', '.jpeg', '.jpg', '.gif', '.png'], // Automatically resolve certain extensions
         alias: { // Create aliases
