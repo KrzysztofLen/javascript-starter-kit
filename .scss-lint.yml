@@ -1,7 +1,8 @@
 scss_files: 'src/assets/stylesheets/**/*.css.scss'
 
 exclude: ['./node_modules/**/*',
-'./dist/**/*']
+'./dist/**/*',
+'./coverage/**/*']
 
 files:
   ignore:

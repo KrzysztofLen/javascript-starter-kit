@@ -25,16 +25,37 @@
   "bugs": {
     "url": "https://github.com/KrzysztofLen/javascript-starter-kit/issues"
   },
+  "nyc": {
+    "require": [
+      "babel-register"
+    ],
+    "reporter": [
+      "lcov",
+      "text"
+    ],
+    "include": [
+      "src/**/*.spec.js"
+    ],
+    "exclude": [
+      "src/**/*.scss"
+    ],
+    "instrument": false,
+    "sourceMap": false
+  },
   "homepage": "https://github.com/KrzysztofLen/javascript-starter-kit#readme",
   "devDependencies": {
     "autoprefixer": "^7.1.2",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
+    "babel-plugin-istanbul": "^3.0.0",
+    "babel-polyfill": "^6.16.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
+    "babel-register": "^6.18.0",
     "chai": "^4.1.2",
     "chalk": "^2.1.0",
+    "cross-env": "^5.0.5",
     "css-hot-loader": "^1.3.0",
     "css-loader": "^0.28.5",
     "eslint": "^4.5.0",
@@ -43,12 +64,16 @@
     "extract-text-webpack-plugin": "^3.0.0",
     "file-loader": "^0.11.2",
     "image-webpack-loader": "^3.3.1",
+    "isparta": "^4.0.0",
+    "istanbul": "^0.4.5",
+    "istanbul-instrumenter-loader": "^3.0.0",
     "jsdom": "9.8.0",
     "localtunnel": "1.8.1",
     "mocha": "^3.5.0",
     "node-sass": "^4.5.3",
     "npm-run-all": "^4.0.2",
     "nsp": "2.6.2",
+    "nyc": "^11.1.0",
     "optimize-css-assets-webpack-plugin": "^3.1.1",
     "postcss-loader": "^2.0.6",
     "react": "^15.6.1",
