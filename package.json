@@ -5,13 +5,17 @@
   "main": "index.js",
   "scripts": {
     "prestart": "babel-node buildScripts/startMessage.js",
-    "start": "npm-run-all --parallel security-check dev-server lint:watch lint:scss test:watch",
+    "start": "npm-run-all --parallel security-check dev-server lint:watch lint:scss test:watch lint:html",
     "dev-server": "webpack-dev-server -d --hot --config webpack.config.js",
     "security-check": "nsp check",
-    "lint": "esw webpack.config.* src buildScripts",
-    "lint:watch": "npm run lint -- --watch",
+    "accessibility": "node ./buildScripts/accessibility-validation.js",
+    "lint:html": "node ./buildScripts/html-validator.js",
+    "lint:eslint": "esw webpack.config.* src buildScripts",
+    "lint:watch": "npm run lint:eslint -- --watch",
     "lint:scss": "scss-lint .",
+    "lint:scss-watch": "scss-lint . -- --watch",
     "test": "mocha --list progress buildScripts/testSetup.js \"src/**/*.spec.js\"",
+    "test:coverage": "nyc npm run test",
     "test:watch": "npm run test -- --watch",
     "watch": "webpack --watch",
     "production": "SET NODE_ENV=production & babel-node buildScripts/build.js & webpack -p"
@@ -34,7 +38,7 @@
       "text"
     ],
     "include": [
-      "src/**/*.spec.js"
+      "\"src/**/*.spec.js\""
     ],
     "exclude": [
       "src/**/*.scss"
@@ -63,6 +67,7 @@
     "eslint-watch": "^3.1.2",
     "extract-text-webpack-plugin": "^3.0.0",
     "file-loader": "^0.11.2",
+    "html5-lint": "^0.3.0",
     "image-webpack-loader": "^3.3.1",
     "isparta": "^4.0.0",
     "istanbul": "^0.4.5",
@@ -83,5 +88,8 @@
     "uglifyjs-webpack-plugin": "^0.4.6",
     "webpack": "^3.5.5",
     "webpack-dev-server": "^2.7.1"
+  },
+  "dependencies": {
+    "access-sniff": "^3.0.1"
   }
 }

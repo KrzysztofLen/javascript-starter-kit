@@ -7,12 +7,16 @@
       "text"
     ],
     "include": [
-      src/**/*.js",
+      "src/**/*.spec.js"
     ],
     "exclude": [
-      src/**/*.scss",
+      "src/**/*.scss"
     ],
+     "extension": [
+          ".jsx",
+          ".es6"
+     ],
     "instrument": false,
     "sourceMap": false,
-    "all: true
+    "all": true
 }
