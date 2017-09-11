@@ -7,7 +7,7 @@
       "text"
     ],
     "include": [
-      "src/**/*.spec.js"
+      "test/**/*.spec.js"
     ],
     "exclude": [
       "src/**/*.scss"

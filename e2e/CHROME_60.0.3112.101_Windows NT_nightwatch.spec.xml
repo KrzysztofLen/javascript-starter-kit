@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="4">
+
+  <testsuite name="nightwatch.spec"
+    errors="0" failures="0" hostname="" id="" package="nightwatch.spec" skipped="0"
+    tests="4" time="36.14" timestamp="Mon, 11 Sep 2017 17:42:04 GMT">
+  
+    <testcase name="Is header contains correct text?" classname="nightwatch.spec" time="12.35" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Is main part of app contains proper number of elements?" classname="nightwatch.spec" time="7.851" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="Capture screenshot to see manually that page looks correct" classname="nightwatch.spec" time="6.840" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="Check text paragraph" classname="nightwatch.spec" time="9.094" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+
+  
+
+  
+  </testsuite>
+</testsuites>

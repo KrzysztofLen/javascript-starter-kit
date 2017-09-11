@@ -20,3 +20,5 @@ class Car {
 const bmw = new Car;
 
 bmw.manufacturer('bmw');
+
+//TODO 1. Code coverage 2. Testing React component
