@@ -14,6 +14,18 @@ Starter kit for every new project.
 - Mocha + Chai
 - Editorconfig
 - Accessibility Lint
+- Nightwatch
+- Nyc code coverage
+```
+
+# Commands: 
+```sh
+$ npm start -s => run app
+$ npm run test => run TDD
+$ npm run test:coverage => Run TDD with coverage
+$ npm run accessibility => run accesibility
+$ npm run test:integration => run e2e
+$ npm run open:coverage => open index file with coverage
 ```
 
 

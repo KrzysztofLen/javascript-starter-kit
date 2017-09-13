@@ -12,13 +12,14 @@
     "lint:html": "node ./buildScripts/html-validator.js",
     "lint:eslint": "esw webpack.config.* src buildScripts",
     "lint:watch": "npm run lint:eslint -- --watch",
-    "lint:scss": "scss-lint .",
+    "lint:scss": "scss-lint -c .scss-lint.yml",
     "lint:scss-watch": "scss-lint . -- --watch",
     "test": "mocha --list progress buildScripts/testSetup.js \"src/**/*.spec.js\"",
-    "test:coverage": "istanbul cover ./node_modules/.bin/_mocha -- 'test/**/*.js' --require babel-core/register",
+    "test:coverage": "nyc --reporter=lcov --reporter=text _mocha \"src/**/*.spec.js\"",
     "test:watch": "npm run test -- --watch",
     "test:integration": "nightwatch",
     "selenium:start": "selenium-standalone install && selenium-standalone start",
+    "open:coverage": "start chrome ./coverage/lcov-report/index.html",
     "watch": "webpack --watch",
     "production": "SET NODE_ENV=production & babel-node buildScripts/build.js & webpack -p"
   },
@@ -38,20 +39,7 @@
     "reporter": [
       "lcov",
       "text"
-    ],
-    "include": [
-      "test/**/*.spec.js"
-    ],
-    "exclude": [
-      "src/**/*.scss"
-    ],
-    "extension": [
-      ".jsx",
-      ".es6"
-    ],
-    "instrument": false,
-    "sourceMap": false,
-    "all": true
+    ]
   },
   "homepage": "https://github.com/KrzysztofLen/javascript-starter-kit#readme",
   "devDependencies": {
