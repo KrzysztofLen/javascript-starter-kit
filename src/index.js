@@ -5,7 +5,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './app/app.jsx';
 
-/*eslint-enable no-unused-vars*/
+/*eslint-disable no-unused-vars*/
 
 ReactDOM.render(<App />, document.getElementById('root'));
 

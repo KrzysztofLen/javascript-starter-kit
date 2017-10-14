@@ -12,7 +12,7 @@ fs.readFile('./dist/index.html', 'utf8', function (err, html) {
       var type = msg.type, // error or warning
         message = msg.message;
 
-      console.log(chalk.bgRedBright("HTML5 Lint : " + type) + " " + (chalk.redBright(message)));
+      console.log(chalk.bgRedBright("HTML5 Lint : " + type) + " " + (chalk.redBright(message))); // eslint-disable-line no-console
 
     });
   });

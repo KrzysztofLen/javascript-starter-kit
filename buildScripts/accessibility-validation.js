@@ -10,5 +10,5 @@ AccessSniff
   .then(function (report) {
     AccessSniff.report(report);
   }, function (error) {
-    console.error(error)
+    console.error(error) // eslint-disable-line no-console
   });

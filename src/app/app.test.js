@@ -10,6 +10,6 @@ mockery.registerMock('../assets/images/slider01.jpg', 'slider01.jpg');
 describe('React component', () => {
   it("contains spec with an expectation", function() {
     const wrapper = shallow(<App />);
-    console.log(wrapper);
+    console.log(wrapper); // eslint-disable-line no-console
   });
 });
