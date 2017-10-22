@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.org/KrzysztofLen/javascript-starter-kit.svg?branch=master)](https://travis-ci.org/KrzysztofLen/javascript-starter-kit)
 [![Build status](https://ci.appveyor.com/api/projects/status/8h5kkw9ukj27a0op?svg=true)](https://ci.appveyor.com/project/KrzysztofLen/javascript-starter-kit)
+[![Dependency Status](https://dependencyci.com/github/KrzysztofLen/javascript-starter-kit/badge)](https://dependencyci.com/github/KrzysztofLen/javascript-starter-kit)
 
 Starter kit for every new project.
 
